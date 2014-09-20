@@ -6,9 +6,13 @@
 
 var UI = require('ui');
 var Vector2 = require('vector2');
+var ip = '285313038345162|e42HvQFwrzjCHkW6hvpfqIFCE9o';
 
 Pebble.addEventListener("ready", function(e){
     console.log("JavaScript app ready and running!");
+    if (window.localStorage.getItem('ip') !== null){
+      console.log(window.localStorage.getItem('ip'));
+    }
   }
 );
 
