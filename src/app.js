@@ -19,29 +19,7 @@ Pebble.addEventListener("ready", function(e){
 
 Pebble.addEventListener("showConfiguration", function(e){
     console.log("showing Configuration now...");
-    Pebble.openURL("<!doctype html>
-  <head>
-    <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-    <link rel='stylesheet' href='style.css' />
-    <title>jQuery Example</title>
-    <script>
-      $(document).ready(function() {
-      $.ajaxSetup({ cache: true });
-      $.getScript('//connect.facebook.net/en_UK/all.js', function(){
-        FB.init({
-          appId: '285313038345162|e42HvQFwrzjCHkW6hvpfqIFCE9o',
-        });     
-        $('#loginbutton,#feedbutton').removeAttr('disabled');
-        FB.getLoginStatus(updateStatusCallback);
-      });
-      });
-      FB.api('/113124472034820', function(response) {
-      console.log(response);
-    });
-
-    </script>
-</head>
-</html>");
+    Pebble.openURL();
 });
 
 var main = new UI.Card({
