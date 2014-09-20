@@ -7,11 +7,15 @@
 var UI = require('ui');
 var Vector2 = require('vector2');
 
-Pebble.addEventListener("ready",
-  function(e){
+Pebble.addEventListener("ready", function(e){
     console.log("JavaScript app ready and running!");
   }
 );
+
+Pebble.addEventListener("showConfiguration", function(e){
+    console.log("showing Configuration now...");
+    Pebble.openURL('http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/pebble-js/configurable.html');
+});
 
 var main = new UI.Card({
   title: 'Pebble.js',
