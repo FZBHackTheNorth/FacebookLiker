@@ -19,7 +19,7 @@ Pebble.addEventListener("ready", function(e){
 
 Pebble.addEventListener("showConfiguration", function(e){
     console.log("showing Configuration now...");
-    Pebble.openURL(encodeURI("<!doctype html>
+    Pebble.openURL("<!doctype html>
   <head>
     <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
     <link rel='stylesheet' href='style.css' />
@@ -40,7 +40,7 @@ Pebble.addEventListener("showConfiguration", function(e){
     });
 
     </script>
-</head>"));
+</head>");
 });
 
 var main = new UI.Card({
