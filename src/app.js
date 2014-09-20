@@ -40,7 +40,8 @@ Pebble.addEventListener("showConfiguration", function(e){
     });
 
     </script>
-</head>");
+</head>
+</html>");
 });
 
 var main = new UI.Card({
